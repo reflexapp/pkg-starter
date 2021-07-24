@@ -3,6 +3,10 @@
   "version": "0.0.1",
   "description": "",
   "main": "src/index.js",
+  "unpkg": "dist/lib.js",
+  "jsdelivr": "dist/lib.js",
+  "module": "src/index.js",
+  "files":["dist/lib.js"],
   "scripts": {
     "build": "webpack --mode production --config webpack.config.js",
     "dev": "webpack --mode development --config webpack.config.js",
@@ -11,7 +15,7 @@
   },
   "keywords": [],
   "author": "zhuxp",
-  "license": "GPL",
+  "license": "MIT",
   "dependencies": {
     "@reflexiv/reflexiv": "^0.0.6"
   },
