@@ -9,9 +9,7 @@
   "files":["dist/lib.js"],
   "scripts": {
     "build": "webpack --mode production --config webpack.config.js",
-    "dev": "webpack --mode development --config webpack.config.js",
-    "buildapp": "webpack --mode production --config webpack.app.js",
-    "devapp": "webpack --mode development --config webpack.app.js"
+    "dev": "webpack --mode development --config webpack.config.js"
   },
   "keywords": [],
   "author": "zhuxp",
