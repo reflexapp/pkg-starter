@@ -1,5 +1,5 @@
 import pkg from '../package.json';
-import {getNode, GenericPackage, GenericContainer} from "@reflexiv/reflexiv"
+import {getNode, GenericPackage, GenericContainer,h} from "@reflexiv/reflexiv"
 const version = pkg.version
 
 const cFirst = (string) => {
@@ -15,7 +15,9 @@ const name = cName(pkg.name)
 const render = (core, proc) => (container, state) => {
     container.setState(state)
     var div = getNode(container)
-    div.innerHTML = "Package Starter Here : " + version
+    var _div_ = h("div")
+    _div_.innerHTML = name + " : " + version
+    div.appendChild(_div_)
     container.on("resize", () => {
         // TODO with container.width and container.height
     })
